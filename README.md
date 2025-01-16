@@ -1,4 +1,4 @@
-# rust-wasm
+# Rust 🦀 and WebAssembly 🕸
 
 ## WASM-PACK Template
 
