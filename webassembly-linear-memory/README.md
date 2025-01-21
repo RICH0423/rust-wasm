@@ -1,3 +1,33 @@
+# webassembly-linear-memory example
+
+## Tools 
+
+### wasm-bindgen
+a Rust library and CLI tool that facilitate high-level interactions between Wasm modules and JavaScript.
+- [doc](https://rustwasm.github.io/docs/wasm-pack/)
+- [github](https://github.com/rustwasm/wasm-bindgen)
+
+```
+cargo install wasm-pack
+cargo add wasm-bindgen
+```
+
+### wasm-pack
+A CLI tool developed by the Rust / Wasm Working Group for packaging up WebAssembly. The primary purpose of wasm-pack is building Wasm libraries for use in JavaScript.
+```
+wasm-pack build --target web
+```
+
+```
+Finished `release` profile [optimized] target(s) in 14.49s
+[INFO]: Optimizing wasm binaries with `wasm-opt`...
+[INFO]: Optional fields missing from Cargo.toml: 'description', 'repository', and 'license'. These are not necessary, but recommended
+[INFO]: ✨   Done in 15.23s
+[INFO]: 📦   Your wasm pkg is ready to publish at /Users/rust-wasm/webassembly-linear-memory/pkg
+```
+
+## code description
+
 ```rust
 use wasm_bindgen::prelude::*;
 
