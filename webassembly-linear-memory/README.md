@@ -14,6 +14,9 @@ cargo add wasm-bindgen
 
 ### wasm-pack
 A CLI tool developed by the Rust / Wasm Working Group for packaging up WebAssembly. The primary purpose of wasm-pack is building Wasm libraries for use in JavaScript.
+- [doc](https://rustwasm.github.io/wasm-pack/book/)
+- [github](https://github.com/rustwasm/wasm-pack)
+
 ```
 wasm-pack build --target web
 ```
