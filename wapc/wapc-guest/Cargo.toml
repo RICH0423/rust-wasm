@@ -1,0 +1,13 @@
+[package]
+name = "wapc-guest"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wapc-guest = "1.2.0"
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.release]
+opt-level = "s"
