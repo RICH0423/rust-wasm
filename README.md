@@ -48,3 +48,9 @@ Query the size of the memory instance.
 grow 
 Request an expansion of the memory instance. The new maximum size must be specified in multiples of the page size.
 ```
+
+### [waPC protocol](wapc)
+The WebAssembly Procedure Calls (waPC) project is like a standard module interface for WebAssembly on top of an extensible RPC framework.
+- waPC aims to provide a bi-directional communications contract for stateless operation. 
+- waPC can be used to build cross-platform applications. The protocol standardizes communication between native code calls and WebAssembly. Through waPC, a host can initialize and request calls to a guest and the guest can offer commands or functions the host can call.
+
