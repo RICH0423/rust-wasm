@@ -54,3 +54,23 @@ The WebAssembly Procedure Calls (waPC) project is like a standard module interfa
 - waPC aims to provide a bi-directional communications contract for stateless operation. 
 - waPC can be used to build cross-platform applications. The protocol standardizes communication between native code calls and WebAssembly. Through waPC, a host can initialize and request calls to a guest and the guest can offer commands or functions the host can call.
 
+## [WebAssembly Component Model(WCM)](https://github.com/WebAssembly/component-model)
+The WebAssembly Component Model (WCM) allows one WebAssembly binary to safely interact with another over a structured interface.
+- With WCM, libraries written in different languages (such as Rust, Python, JavaScript, Go, and more) can interoperate in a true polyglot fashion.
+- A WebAssembly component exposes a set of imports and exports using the WebAssembly Interface Types (WIT) language. The WebAssembly runtime then instantiates all the proper components to run the application.
+
+![](images/WCM.png)
+
+Component features:
+- Components are portable, interoperabl (WebAssembly binaries .wasm files), and composable
+- The component model that WebAssembly adopted is an alternative to decorating functions with (a)synchronous metadata. 
+- The component model emphasizes modular, reusable components that can be composed to form larger applications. 
+- The component model abstracts away the complexities of concurrency from the individual components, allowing the components to solely serve their specific task. The host runtime manages asynchronous operations and communication between components.
+- Components can compile from a variety of languages and run across architectures.
+
+Reference:
+- https://www.infoq.com/articles/webassembly-component-model/
+- https://wasmcloud.com/blog/webassembly-components-and-wasmcloud-actors-a-glimpse-of-the-future/
+- https://www.cncf.io/blog/2024/07/09/webassembly-components-the-next-wave-of-cloud-native-computing/
+
+### Implements and composes Components in wasmCloud
