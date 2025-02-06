@@ -69,6 +69,7 @@ Component features:
 - Components can compile from a variety of languages and run across architectures.
 
 Reference:
+- [The WebAssembly Component Model - Bytecode Alliance](https://component-model.bytecodealliance.org/introduction.html)
 - https://www.infoq.com/articles/webassembly-component-model/
 - https://wasmcloud.com/blog/webassembly-components-and-wasmcloud-actors-a-glimpse-of-the-future/
 - https://www.cncf.io/blog/2024/07/09/webassembly-components-the-next-wave-of-cloud-native-computing/
