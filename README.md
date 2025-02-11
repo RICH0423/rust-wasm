@@ -74,7 +74,7 @@ Reference:
 - https://wasmcloud.com/blog/webassembly-components-and-wasmcloud-actors-a-glimpse-of-the-future/
 - https://www.cncf.io/blog/2024/07/09/webassembly-components-the-next-wave-of-cloud-native-computing/
 
-### wasmCloud Platform
+### [wasmCloud Platform](https://wasmcloud.com/docs/intro/)
 wasmCloud is a universal application platform that enables you to write code in your language of choice, compile the code into a WebAssembly component, and run your application anywhere—from your laptop to the edge to the cloud.
 
 In wasmCloud, applications are comprised of components and providers:
